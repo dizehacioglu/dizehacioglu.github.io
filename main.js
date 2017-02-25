@@ -90,8 +90,11 @@ tags.forEach(function(tag) {
 
 $('#tags').on('click', 'span', function() {
 
+  $('#tags span').css('box-shadow', '');
+
   $('.result').remove();
   $('#content').css('height', '250px')
+  $(this).css('box-shadow', '5px 5px 5px #888')
 
   $('html, body').animate({
         scrollTop: $('#results').offset().top
