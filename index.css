@@ -1,0 +1,35 @@
+.top-section, a {
+  color: #FFA87E;
+  background-color: #ba3a00;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section > div {
+  flex-grow: 1;
+  max-width: 350px;
+  padding: 20px;
+}
+
+section > div > img {
+  width: 350px;
+}
+
+section > div > a > i {
+  margin: 10px 10px 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  section > div {
+    flex-grow: 0;
+  }
+}
